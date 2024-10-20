@@ -1,6 +1,7 @@
 <template>
   <div>
     <Navbar></Navbar>
+    <NuxtPage />
   </div>
 </template>
 
@@ -17,6 +18,7 @@
     height: 100%;
     overflow: hidden;
     box-sizing: border-box;
+    background-color: #181D27;
   }
 
 </style>

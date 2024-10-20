@@ -1,14 +1,16 @@
 <template>
   <div class="container">
-    <div class="nav-item">
-      <strong>Hello</strong>
-    </div>
-    <div class="nav-item">
-      <strong>Hello</strong>
-    </div>
-    <div class="nav-item">
-      <strong>Hello</strong>
-    </div>
+
+    <nuxt-link to="/finance" class="nav-item">
+      <strong>Financeiro <v-icon size="x-small">fa fa-money-bill</v-icon></strong>
+    </nuxt-link>
+
+    <nuxt-link to="/habits" class="nav-item">
+      <strong>Hábitos <v-icon size="x-small">fa fa-clipboard-list</v-icon> </strong>
+    </nuxt-link>
+    <nuxt-link to="/writing" class="nav-item">
+      <strong>Escrita <v-icon size="x-small">fa fa-signature</v-icon></strong>
+    </nuxt-link>
   </div>
 </template>
 
@@ -18,11 +20,10 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .container {
     width: 100%;
-    height: 5%;
-    background-color: orange;
+    height: 8%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,10 +32,23 @@ export default {
 
   .nav-item {
     width: 120px;
-    background: green;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 50px;
+    text-align: center;
+    margin-top: 16px;
+    text-decoration: none;
+
+    strong {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      color: #3A7D44;
+    }
+
+    strong:hover {
+      font-size: larger;
+      color: #69B578;
+    }
   }
 
 </style>
